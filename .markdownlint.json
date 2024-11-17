@@ -1,0 +1,18 @@
+{
+  "default": true,
+  "heading-style": {
+    "style": "atx"
+  },
+  "hr-style": {
+    "style": "- - -"
+  },
+  "ignore_front_matter": true,
+  "line-length": false,
+  "link-fragments": false,
+  "no-duplicate-heading": {
+    "siblings_only": true
+  },
+  "no-hard-tabs": true,
+  "no-inline-html": false,
+  "whitespace": false
+}

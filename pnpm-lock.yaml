@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@inlang/paraglide-sveltekit':
-        specifier: ^0.11.1
+        specifier: ^0.11.5
         version: 0.11.5(@sveltejs/kit@2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.2)(vite@5.4.11(@types/node@22.9.0)))(svelte@5.2.2)(vite@5.4.11(@types/node@22.9.0)))
       '@libsql/client':
         specifier: ^0.9.0
@@ -30,68 +30,74 @@ importers:
         specifier: ^0.33.0
         version: 0.33.0(@libsql/client@0.9.0)
     devDependencies:
+      '@eslint/js':
+        specifier: ^9.15.0
+        version: 9.15.0
       '@playwright/test':
-        specifier: ^1.45.3
+        specifier: ^1.48.2
         version: 1.48.2
       '@sveltejs/adapter-auto':
-        specifier: ^3.0.0
+        specifier: ^3.3.1
         version: 3.3.1(@sveltejs/kit@2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.2)(vite@5.4.11(@types/node@22.9.0)))(svelte@5.2.2)(vite@5.4.11(@types/node@22.9.0)))
       '@sveltejs/kit':
-        specifier: ^2.0.0
+        specifier: ^2.8.1
         version: 2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.2)(vite@5.4.11(@types/node@22.9.0)))(svelte@5.2.2)(vite@5.4.11(@types/node@22.9.0))
       '@sveltejs/vite-plugin-svelte':
-        specifier: ^4.0.0
+        specifier: ^4.0.1
         version: 4.0.1(svelte@5.2.2)(vite@5.4.11(@types/node@22.9.0))
       '@types/eslint':
-        specifier: ^9.6.0
+        specifier: ^9.6.1
         version: 9.6.1
+      '@types/eslint__js':
+        specifier: ^8.42.3
+        version: 8.42.3
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       drizzle-kit:
-        specifier: ^0.22.0
+        specifier: ^0.22.8
         version: 0.22.8
       eslint:
-        specifier: ^9.7.0
+        specifier: ^9.15.0
         version: 9.15.0(jiti@1.21.6)
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.15.0(jiti@1.21.6))
       eslint-plugin-svelte:
-        specifier: ^2.36.0
+        specifier: ^2.46.0
         version: 2.46.0(eslint@9.15.0(jiti@1.21.6))(svelte@5.2.2)
       globals:
-        specifier: ^15.0.0
+        specifier: ^15.12.0
         version: 15.12.0
       prettier:
-        specifier: ^3.3.2
+        specifier: ^3.3.3
         version: 3.3.3
       prettier-plugin-svelte:
-        specifier: ^3.2.6
+        specifier: ^3.2.8
         version: 3.2.8(prettier@3.3.3)(svelte@5.2.2)
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.5
+        specifier: ^0.6.8
         version: 0.6.8(prettier-plugin-svelte@3.2.8(prettier@3.3.3)(svelte@5.2.2))(prettier@3.3.3)
       svelte:
-        specifier: ^5.0.0
+        specifier: ^5.2.2
         version: 5.2.2
       svelte-check:
-        specifier: ^4.0.0
+        specifier: ^4.0.9
         version: 4.0.9(svelte@5.2.2)(typescript@5.6.3)
       tailwindcss:
-        specifier: ^3.4.9
+        specifier: ^3.4.15
         version: 3.4.15
       typescript:
-        specifier: ^5.0.0
+        specifier: ^5.6.3
         version: 5.6.3
       typescript-eslint:
-        specifier: ^8.0.0
+        specifier: ^8.14.0
         version: 8.14.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3)
       vite:
-        specifier: ^5.0.3
+        specifier: ^5.4.11
         version: 5.4.11(@types/node@22.9.0)
       vitest:
-        specifier: ^2.0.4
+        specifier: ^2.1.5
         version: 2.1.5(@types/node@22.9.0)
 
 packages:
@@ -1009,6 +1015,9 @@ packages:
   '@types/eslint@9.6.1':
     resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
 
+  '@types/eslint__js@8.42.3':
+    resolution: {integrity: sha512-alfG737uhmPdnvkrLdZLcEKJ/B8s9Y4hrZ+YAdzUeoArBlSUERA2E87ROfOaS4jd/C45fzOoZzidLc1IPwLqOw==}
+
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
@@ -1844,7 +1853,6 @@ packages:
 
   libsql@0.4.7:
     resolution: {integrity: sha512-T9eIRCs6b0J1SHKYIvD8+KCJMcWZ900iZyxdnSCdqxN12Z1ijzT+jY5nrk72Jw4B0HGzms2NgpryArlJqvc3Lw==}
-    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lilconfig@2.1.0:
@@ -3414,6 +3422,10 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.6
       '@types/json-schema': 7.0.15
+
+  '@types/eslint__js@8.42.3':
+    dependencies:
+      '@types/eslint': 9.6.1
 
   '@types/estree@1.0.6': {}
 
