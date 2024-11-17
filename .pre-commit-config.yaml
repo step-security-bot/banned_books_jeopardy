@@ -18,10 +18,10 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
   - repo: https://github.com/pre-commit/mirrors-eslint
-    stages: ['pre-commit', 'pre-push']
     rev: 'v9.15.0' # Use the sha / tag you want to point at
     hooks:
       - id: eslint
+        stages: ['pre-commit', 'pre-push']
         additional_dependencies:
           - 'eslint@v9.15.0'
           - '@typescript-eslint/eslint-plugin@8.14.0'
@@ -32,9 +32,9 @@ repos:
         types: [file]
   - repo: https://github.com/rbubley/mirrors-prettier
     rev: 'v3.3.3' # Use the sha / tag you want to point at
-    stages: ['pre-commit', 'pre-push']
     hooks:
       - id: prettier
+        stages: ['pre-commit', 'pre-push']
         additional_dependencies:
           - prettier@3.3.3
           - prettier-plugin-svelte@3.2.8
